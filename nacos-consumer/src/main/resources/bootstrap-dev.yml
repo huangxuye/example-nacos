@@ -1,0 +1,19 @@
+spring:
+  application:
+  # 这里的应用名对应 Nacos Config 中的 Data ID，实际应用名称以配置中心的配置为准
+    name: nacos-consumer-dev
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 47.111.117.36:8848
+        namespace: b3f18636-67b9-4b54-ba40-414be135ef3a
+        group: DEFAULT_GROUP
+      config:
+        server-addr: 47.111.117.36:8848
+        prefix: ${spring.application.name}
+        file-extension: yml
+        namespace: b3f18636-67b9-4b54-ba40-414be135ef3a
+        group: DEFAULT_GROUP
+        refresh-enabled: true

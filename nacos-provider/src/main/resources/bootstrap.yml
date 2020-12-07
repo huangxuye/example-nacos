@@ -1,0 +1,25 @@
+spring:
+  #注意： Spring Boot 配置文件的加载顺序，依次为 bootstrap.properties -> bootstrap-dev.yml -> application.properties -> application.yml ，其中 bootstrap.properties 配置为最高优先级
+  profiles:
+    active: dev
+#nacos配置中心的配置样例
+#spring:
+#  application:
+#    name: nacos-provider
+#  cloud:
+#    # nacos服务地址
+#    nacos:
+#      discovery:
+#        server-addr: 47.111.117.36:8848
+#
+#server:
+#  port: 7005
+#
+## 节点检查
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"
+#yml-source:
+#  name: dev
